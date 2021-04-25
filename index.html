@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <style> body{
+  background-image: url('catfe1.jpeg');
+  background-repeat:no-repeat;
+background-size:100% 100%;
+background-position:center;
+}
+
+</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  <title>Catfé</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <header>
+      <a href="#" class="logo">Catfé</a>
+      <div class="toggle" onclick="menuToggle();"></div>
+    </header>
+<div class="glass"></div>
+<div class ="content">
+  <h2>Happiness...<br><span>hot coffe with purrs.</h2>
+</div>
+
+<ul class="lista">
+  <li style="--i:1"><a href="#">Facebook</a></li>
+  <li style="--i:2"><a href="#">Instagram</a></li>
+</ul>
+
+<ul class="menuItems">
+<li style="--i: 1;"><a href="AboutUs.html">About us</a></li>
+<li style="--i: 2;"><a href="VirtualTour.html" target="_blank">Virtual tour</a></li>
+<li style="--i: 3;"><a href="https://www.google.com/maps/place/Catfe/@49.2799755,-123.1071426,15z/data=!4m2!3m1!1s0x0:0x5532933644c32d2f?sa=X&ved=2ahUKEwjB7LDFvvvvAhWC_aQKHXt2C_0Q_BIwHXoECDAQBQ" target="_blank">Come find us</a></li>
+</ul>
+
+  </section>
+  <script type="text/javascript">
+  function menuToggle() {
+    const toggleMenu = document.querySelector('.toggle');
+    const section = document.querySelector('section');
+toggleMenu.classList.toggle('active');
+    section.classList.toggle('active');
+  }
+  </script>
+</body>
+</html>
